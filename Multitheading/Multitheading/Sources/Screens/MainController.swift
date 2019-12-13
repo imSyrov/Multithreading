@@ -35,18 +35,17 @@ class MainController: UIViewController {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
         let url = URL(string: domain + fact)!
-        let request = NSMutableURLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
+        var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = header
         
-        URLSession.shared.dataTask(with: request as URLRequest) { (data, responce, error) in
+        URLSession.shared.dataTask(with: request) { (data, responce, error) in
             guard let data = data else { return }
             guard let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { return }
             guard let factNumber = json["number"] as? Int else { return }
             guard let factText = json["text"] as? String else { return }
             var withYear = ""
-            if json.contains(where: { $0.key == "year" }) {
-                guard let year = json["year"] as? Int else { return }
+            if let year = json["year"] as? Int {
                 withYear = "in " + String(year) + " year"
             }
             DispatchQueue.main.async {

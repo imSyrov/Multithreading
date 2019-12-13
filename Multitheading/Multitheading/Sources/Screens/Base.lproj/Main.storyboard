@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Fact!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tq-AC-h2a">
-                                <rect key="frame" x="10" y="10" width="355" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="10" y="10" width="355" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6n4-X0-CEH">
-                                <rect key="frame" x="10" y="232" width="355" height="130"/>
+                                <rect key="frame" x="10" y="465" width="355" height="130"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="Y7P-qU-7B7"/>
@@ -30,23 +30,23 @@
                                 </constraints>
                             </pickerView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-L3-jLd">
-                                <rect key="frame" x="169" y="114" width="37" height="37"/>
+                                <rect key="frame" x="169" y="232" width="37" height="37"/>
                             </activityIndicatorView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-rO-bs8">
-                                <rect key="frame" x="10" y="55" width="355" height="149"/>
+                                <rect key="frame" x="10" y="57.5" width="355" height="379.5"/>
                                 <color key="backgroundColor" red="0.42331797263255555" green="0.73248038723540687" blue="0.98039215690000003" alpha="0.48092358732876711" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the type of fact you want to know about" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXr-wv-sHe">
-                                <rect key="frame" x="10" y="209" width="355" height="18"/>
+                                <rect key="frame" x="10" y="442" width="355" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsq-nO-WpO">
-                                <rect key="frame" x="10" y="379" width="355" height="30"/>
+                                <rect key="frame" x="10" y="612" width="355" height="30"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Get Fact">
@@ -77,7 +77,7 @@
                             <constraint firstItem="6n4-X0-CEH" firstAttribute="leading" secondItem="7tq-AC-h2a" secondAttribute="leading" id="Qa9-kn-DIl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jXr-wv-sHe" secondAttribute="trailing" symbolic="YES" id="TwK-SS-3vD"/>
                             <constraint firstItem="7tq-AC-h2a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZIl-5r-33g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hsq-nO-WpO" secondAttribute="bottom" constant="258" id="a8w-xs-54x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hsq-nO-WpO" secondAttribute="bottom" constant="25" id="a8w-xs-54x"/>
                             <constraint firstItem="jXr-wv-sHe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eby-aT-h5k"/>
                             <constraint firstItem="Rws-rO-bs8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fyj-bF-FWy"/>
                             <constraint firstItem="7tq-AC-h2a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="iyU-my-pxZ"/>
